@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-courses",
+  "version": "0.0.1",
+  "description": "just a js course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucaHermann/Node.js.git"
+  },
+  "author": "lhermann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LucaHermann/Node.js/issues"
+  },
+  "homepage": "https://github.com/LucaHermann/Node.js#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
