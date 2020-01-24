@@ -15,22 +15,23 @@
 }
 
 .form-control input {
-  border: 1px solid #dbc441;
+  border: 1px solid #e27108;
+  background-color: #eeeeee;
   font: inherit;
   border-radius: 2px;
 }
 
 button {
   font: inherit;
-  border: 1px solid #3e00a1;
-  color: #3e00a1;
-  background: white;
+  border: 1px solid #e27108;
+  color: #000000;
+  background: #eeeeee;
   border-radius: 3px;
   cursor: pointer;
 }
 
 button:hover,
 button:active {
-  background-color: #3e00a1;
-  color: white;
+  background-color: #e27108;
+  color: #000000;
 }
