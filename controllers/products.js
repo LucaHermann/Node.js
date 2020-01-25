@@ -14,7 +14,7 @@ exports.postAddProduct = (req, res) => {
   res.redirect('/');
 };
 
-exports.getProducts = (req, res) => {
+exports.getShopAndProducts = (req, res) => {
   res.render('shop', {
     prods: products,
     pageTitle: 'shop',
