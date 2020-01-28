@@ -17,12 +17,6 @@ exports.postAddProduct = (req, res, next) => {
   res.redirect('/');
 };
 
-exports.getEditProduct = (req, res, next) => {
-  res.render('admin/edit-product', {
-    path: '/admin/edit-product',
-    pageTitle: 'Edit Product'
-  });
-};
 
 exports.getProducts = (req, res, next) => {
   Product.fetchProduct((products) => {
@@ -31,5 +25,12 @@ exports.getProducts = (req, res, next) => {
       path: '/admin/products',
       pageTitle: 'Admin Products List'
     });
+  });
+};
+
+exports.getEditProduct = (req, res, next) => {
+  res.render('admin/edit-product', {
+    path: '/admin/edit-product',
+    pageTitle: 'Edit Product'
   });
 };
