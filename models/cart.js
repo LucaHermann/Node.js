@@ -14,8 +14,8 @@ class Cart {
         cart = JSON.parse(fileContent);
       }
       // Analyze the cart => find existing products
-      // if you add a new product existingProductIndex will be -1 
-      // if it's a product already on the cart it's 0 
+      // if you add a new product existingProductIndex will be -1
+      // if it's a product already on the cart it's 0
       const existingProductIndex = cart.products.findIndex(prod => prod.id === id);
       const existingProduct = cart.products[existingProductIndex];
       let updatedProduct;

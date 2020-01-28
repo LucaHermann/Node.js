@@ -5,6 +5,7 @@ const rootDir = require('../utils/path');
 
 const pathFile = path.join(rootDir, 'data', 'products.json');
 
+//Read the file and fetch all products inside
 const getProductsFromFile = (callback) => {
   fs.readFile(pathFile, (err, fileContent) => {
     if (err) {

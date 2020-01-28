@@ -23,12 +23,9 @@ exports.getProductDetails = (req, res, next) => {
 }
 
 exports.getIndex = (req, res, next) => {
-  Product.fetchProduct((products) => {
-    res.render('shop/index', {
-      prods: products,
-      path: '/',
-      pageTitle: 'Shop'
-    });
+  res.render('shop/index', {
+    path: '/',
+    pageTitle: 'Shop'
   });
 }
 
