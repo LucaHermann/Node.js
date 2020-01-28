@@ -40,3 +40,15 @@ exports.getOrders = (req, res, next) => {
     pageTitle: 'Orders'
   });
 };
+
+exports.getProductDetails = (req, res, next) => {
+  const productId = req.params.productId;
+  Product.findById(productId, product => {
+    console.log(product);
+    res.render('shop/product-detail', {
+      product: product,
+      path: '/products',
+      pageTitle: 'Product Details'
+    })
+  });
+}
