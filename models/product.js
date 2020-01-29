@@ -44,10 +44,11 @@ class Product {
   }
 
   static deleteProductById(id) {
+    //Fetch all products
     getProductsFromFile(products => {
+      // Find the product by id
       const product = products.find(product => product.id === id);
       const productToDelete = products.filter(product => product.id !== id);
-      console.log(productToDelete);
       fs.writeFile(pathFile, JSON.stringify(productToDelete), err => {
         if (!err) {
           Cart.deleteProduct(id, product.price);
